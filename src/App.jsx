@@ -5,6 +5,7 @@ import Blog from "./pages/Blog";
 import Home from "./pages/Home";
 import Layout from "./components/Layout";
 import NotFound from "./pages/NotFound";
+import './App.css'
 
 const App = () => {
   return (

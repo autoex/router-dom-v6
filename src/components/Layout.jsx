@@ -1,19 +1,25 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
+import { Container, Row, Stack } from "react-bootstrap";
 const Layout = () => {
   return (
     <>
-      <header>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/blog">Blog</Link>
+      <header className='App-header'>
+      <Stack direction="horizontal" gap={3}>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/blog">Blog</NavLink>
+        </Stack>
       </header>
-      <main>
+      <Container>
+        <Row>
           <Outlet />
-      </main>
-      <footer>
-          Footer
-      </footer>
+        </Row>
+        <Row>
+         
+          <footer>Footer</footer>
+        </Row>
+      </Container>
     </>
   );
 };
