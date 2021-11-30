@@ -11,7 +11,7 @@ const Layout = () => {
           <NavLink to="/blog">Blog</NavLink>
         </Stack>
       </header>
-      <Container style={{paddingBottom: '1rem'}}>
+      <Container style={{padding: '1rem 0'}}>
         <Row>
           <Outlet />
         </Row>

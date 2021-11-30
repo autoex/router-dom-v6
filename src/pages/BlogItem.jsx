@@ -14,7 +14,7 @@ const BlogItem = () => {
       .then((response) => response.json())
       .then((json) => setPost(json));
   }, [id]);
-  if (!post) return 'Wait..'
+  if (!post) return <>'Wait..'</>
   return (
     <div>
       <h2>{post.title.charAt(0).toUpperCase() + post.title.slice(1)}</h2>
